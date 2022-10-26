@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PvZ Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu">
+            <div class="card">
+                <div class="title">
+                    <h1>Tower Defense Game</h1>
+                </div>
+                <div class="game-instruction">
+                    <ul>
+                        <li>Input your name to play game</li>
+                        <li>Kill enemies to collect resources and score</li>
+                        <li>If enemies pass your defenders then you die</li>
+                        <li>Press "Escape" to pause the game</li>
+                    </ul>
+                </div>
+                <div class="player-input">
+                    <input type="text" class="player-name" placeholder="Input your name">
+                    <button class="btn play">Play</button>
+                </div>
+            </div>
+        </div>
+        <div id="pause">
+            <div class="card">
+                <div class="title">
+                    <h1>Pause Screen</h1>
+                    <div class="pause-content">
+                        <p>Game is Pause, press 'Escape' to play game again</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gameover">
+            <div class="card">
+                <div class="title">
+                    <h1>Gameover</h1>
+                    <div class="gameover-content">
+                        <p>Your Score is <span class="score"></span></p>
+                        <p>Highscore is <span class="highscore"></span></p>
+                        <button class="btn restart">Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas">
+            <div class="info-game">
+                <p>Time: <span class="totalTime"></span></p>
+                <p>Score: <span class="totalScore"></span></p>
+                <p>Resource: <span class="totalResource"></span></p>
+            </div>
+            <canvas id="game"></canvas>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
